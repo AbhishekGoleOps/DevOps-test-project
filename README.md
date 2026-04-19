@@ -28,9 +28,11 @@ This project demonstrates real-world Git workflows along with Docker integration
 - `git blame` → track code changes
 ---
 Git Logs screenshot - 
+
 ![Git Log](screenshots/git-log.png)
 ---
 Docker app run screenshot - 
+
 ![Docker Run](screenshots/docker-run.png)
 ---
 
