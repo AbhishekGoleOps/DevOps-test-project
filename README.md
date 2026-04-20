@@ -58,3 +58,52 @@ In this project, I implemented:
 ```bash
 git clone https://github.com/AbhishekGoleOps/DevOps-test-project.git
 cd DevOps-test-project
+```
+2️⃣ Run Application Locally
+```bash
+python app.py
+```
+3️⃣ Build Docker Image
+```bash
+docker build -t devops-app .
+```
+5️⃣ Kubernetes Deployment
+```bash
+kubectl apply -f deployment.yaml
+kubectl get pods
+```
+6️⃣ CI/CD Pipeline
+
+On every push:
+
+- GitHub Actions runs automatically
+- Builds Docker image
+- Pushes image to Docker Hub
+
+🔐 GitHub Secrets Required
+
+Go to GitHub → Settings → Secrets → Actions
+
+Add:
+
+- DOCKER_USERNAME
+- DOCKER_PASSWORD (Docker Hub token)
+
+📁 Project Structure
+
+```bash
+.
+├── app.py
+├── Dockerfile
+├── deployment.yaml
+├── .github/workflows/main.yml
+└── screenshots/
+```
+📖 My DevOps Journey
+
+This project was built as part of my DevOps learning path:
+
+Git → Docker → Kubernetes → CI/CD
+
+The goal was to simulate real-world DevOps workflows used in production environments.
+
